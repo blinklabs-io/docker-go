@@ -50,7 +50,7 @@ jobs:
         with:
           username: blinklabs
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: ${{ env.IMAGE_NAME }}
+          repository: blinklabs/go
           readme-filepath: ./README.md
           short-description: "Go image built from Chainguard Wolfi"
 
