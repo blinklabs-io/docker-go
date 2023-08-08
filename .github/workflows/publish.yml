@@ -36,6 +36,11 @@ jobs:
           images: |
             blinklabs/go
             ghcr.io/${{ github.repository }}
+          tags: |
+            # version
+            type=match,pattern=v(.*),group=1
+            # branch
+            type=ref,event=branch
       - name: push
         uses: docker/build-push-action@v2
         with:
