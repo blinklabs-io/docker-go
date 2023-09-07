@@ -2,7 +2,7 @@ name: Docker CI
 
 on:
   pull_request:
-    branches: ['main']
+    branches: ['main','release/1.20']
     paths: ['Dockerfile','.github/workflows/ci-docker.yml']
 
 env:
