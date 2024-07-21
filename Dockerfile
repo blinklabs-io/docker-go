@@ -1,3 +1,3 @@
 FROM cgr.dev/chainguard/wolfi-base AS go
-RUN apk update && apk add ca-certificates-bundle build-base openssh git go-1.21~=1.21.11
+RUN apk update && apk add ca-certificates-bundle build-base openssh git go-1.21~=1.21.12
 ENTRYPOINT /usr/bin/go
